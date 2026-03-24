@@ -1,0 +1,248 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FAF8F5;    
+}
+#page-content{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.header{
+    justify-content: center;
+    background-color: #f9f8ff;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-color: #d3d0e8;
+
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+}
+.options{
+    gap: 1rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #5C5A72;
+    justify-content: center;
+}
+
+.name{
+    justify-items: center;
+    font-size: larger;
+}
+.intro{
+    background: linear-gradient(45deg, #FAF8F5 60%, #EFECFB 100%);
+    padding-bottom: 2rem;
+}
+h4{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+    color: #7B6FCC;
+}
+h1{
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    color: #2d2343;
+}
+i{
+    color: #7B6FCC;
+}
+p,ul,a{
+    text-decoration: none;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #5C5A72;
+    padding-bottom: 0.7rem;
+}
+.starting-buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.see-my-work{
+    background-color: #7B6FCC;
+    border-radius: 2rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+}
+.lets-connect{
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: #7B6FCC;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #7B6FCC;
+    padding: 0.8rem 1.8rem;
+}
+#about-me{
+    padding-bottom: 2rem;
+}
+.skill-buttons{
+    display: flex;
+    gap: 1rem;
+}
+#python,#web-dev,#tools,#design,#platforms,#learning{
+    color: #2d2343;
+    background-color: #e4e2ef;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: small;
+    flex: 1;
+}
+
+#projects{
+    padding-bottom: 2rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    align-items: center;
+    gap: 1.5rem;
+}
+.project1{
+    background-color: #FAF8F5;
+    border-radius: 1rem;
+    border: 1px solid #d1ccf8;
+    overflow: hidden;
+    min-width: 300px;
+    height: auto;
+    transition: all 0.3s;
+}
+.project1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.more-projects{
+    background-color: #FAF8F5;
+    border-radius: 1rem;
+    border: 1px solid #d1ccf8;
+    transition: all 0.3s;
+    min-width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.project-body{
+    padding: 0.8rem;
+}
+.skills-used{
+    background-color: #eae7fd;
+    border-radius: 1rem;
+    padding: 0.3rem;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color: #7B6FCC;
+}
+.project-github{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #483d8f;
+}
+#contact,.credits{
+    padding: 0.8rem 1.8rem;
+    text-align: center;
+    background: #1E1C2E;
+}
+.contact-info h1{
+    color: #ffffff;
+}
+.contact-info i{
+    color: #ada6df;
+    font-size: 25px;
+}
+.contact-info p{
+    color: #bbb1c3;
+    font-size: medium;
+}
+.contact-buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+#email,#linkedin,#github{
+    background-color: #e4e2ef;
+    color: #2d2343;
+    font-weight: bold;
+    border-radius: 5rem;
+    padding: 0.8rem 1.8rem;
+    align-content: center;
+}
+.credits{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#move-to-top{
+    color: #484469;
+    font-size: small;
+    border: 1.5px solid #4e4875;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 0.3rem 0.5rem;
+}
+
+.header a:hover {
+    color: #7B6FCC;
+    transition: color 0.2s;
+}
+
+.see-my-work:hover {
+    background: #6A5FBB;
+    transition: all 0.25s;
+}
+
+.lets-connect:hover {
+    background: #EAE7FB;
+    transition: all 0.25s;
+}
+
+.project1:hover,.more-projects:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(123,111,204,0.15);
+    transition: all 0.3s;
+}
+
+.project-github:hover{
+    text-decoration: underline;
+}
+#email:hover, #linkedin:hover, #github:hover {
+    background: rgb(184, 156, 214);
+    border-color: rgba(255,255,255,0.4);
+    transition: all 0.25s;
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#page-content{
+    animation: fadeInUp 1.2s ease-in;
+}
