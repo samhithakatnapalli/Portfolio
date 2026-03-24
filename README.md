@@ -8,4 +8,4 @@ My personal portfolio website — designed and built from scratch using HTML & C
 - Google Fonts (DM Serif Display, Outfit, Caveat)
 
 ## Live Site
-[View Portfolio](https://samhithakatnapalli.github.io/Portfolio/) ← replace with your GitHub Pages link
+[View Portfolio](https://samhithakatnapalli.github.io/Portfolio/)
