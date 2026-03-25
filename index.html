@@ -21,8 +21,7 @@
                 <div class="name">
                     <h4>✦ Samhitha Katnapalli ✦</h4>
                 </div>
-                <h4>Hey there, I'm -</h4>
-                <h1>Turning the ideas in my <br>head into <i>something real.</i></h1>
+                <h1>Hello</h1>
                 <p>I'm a CS engineer who loves turning ideas into clean, functional code. 
                     Currently obsessed with Python, machine learning, and making AI feel less scary.
                 </p>
@@ -151,5 +150,37 @@
                 <p>Designed and built by Samhitha Katnapalli • 2026</p>
                 <a href="#page-content" id="move-to-top">△</a>
             </div>  
+
+    <script>
+        const element = document.querySelector('h1');
+        const words = ['你好','Namaste','こんにちは','Bonjour','안녕하세요','Hello'];
+
+        let wordIndex = 0;
+        let letterIndex = 0;
+        let isDeleting = false;
+
+        setInterval(function() {
+            const currentWord = words[wordIndex];
+
+            if (!isDeleting) {
+                element.textContent = currentWord.slice(0, letterIndex);
+                letterIndex++;
+                if (letterIndex > currentWord.length) {
+                    isDeleting = true;
+                    setTimeout(function() {}, 1000);
+                }
+            } else {
+                element.textContent = currentWord.slice(0, letterIndex);
+                letterIndex--;
+                if (letterIndex < 0) {
+                    isDeleting = false;
+                    wordIndex++;
+                    if (wordIndex >= words.length) wordIndex = 0;
+                    letterIndex = 0;
+                }
+            }
+        }, 200);
+    </script>
+
     </body>
 </html>

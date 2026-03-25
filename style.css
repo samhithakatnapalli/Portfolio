@@ -51,6 +51,7 @@ h1{
     font-family: "DM Serif Display", serif;
     font-style: normal;
     color: #2d2343;
+    min-height: 4rem;
 }
 i{
     color: #7B6FCC;
